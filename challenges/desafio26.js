@@ -9,6 +9,6 @@ db.produtos.updateMany(
 );
 db.produtos.find({}, { _id: 0, nome: 1, tags: 1 });
 
-// Adicione o valor muito sódio ao final do array tags
-// nos produtos em que o percentual de sódio seja maior
-// ou igual a 40
+// Adicione o valor contém sódio ao final do array tags nos
+// produtos em que o percentual de sódio seja maior do que 20
+// e menor do que 40
